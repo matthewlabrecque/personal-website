@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-Regular.ttf');
+}
+
+body {
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 14px;
+    background-color: #282828;
+    color: #ebdbb2;
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+
+}
+
+.profile-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 20px; /* Space between image and text */
+}
+
+.profile-image {
+    flex-shrink: 0; /* Prevents image from shrinking */
+    width: 125px; /* Adjust as needed */
+    border-radius: 50%;
+}
+
+.profile-text {
+    flex: 1; /* Takes remaining space */
+}
+
+#name {
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+a:link {
+  color: #b8bb26;
+}
+
+a:visited {
+    color: #928374;
+}
+
+a:hover {
+    color: #fabd2f;
+}
