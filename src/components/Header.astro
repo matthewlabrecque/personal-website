@@ -7,8 +7,8 @@ const isActive = (path) => pathname === path || pathname === path + '/';
   <span id="name">MATT LABRECQUE</span>
   <span id="links">
     <a class="link" href="/" class={isActive('/') ? 'active' : ''}>Home</a>
-    <a href="/blog/" class={isActive('/blog') ? 'active' : ''}>Blog</a>
-    <a href="/documents/MLabrecque-Resume.pdf">Resume</a>
+      <a href="/website/blog/" class={isActive('/blog') ? 'active' : ''}>Blog</a>
+      <a href="/website/documents/MLabrecque-Resume.pdf">Resume</a>
     <a href="https://github.com/matthewlabrecque">GitHub</a>
     <a href="https://x.com/mlabrecque_dev">X</a>
   </span>
