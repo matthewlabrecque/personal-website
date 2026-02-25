@@ -15,14 +15,13 @@ const sortedPosts = posts.sort((a, b) => {
 </head>
 <body>
   <Header/>
-  <p>The rants and musings of a Mathematician and Computer Scientist from Northern New England. New posts every week (if I have inspiration).</p>
+  <p>The rants and musings of a Mathematician and Computer Scientist from Northern New England. New posts every week.</p>
     
     <section>
     <h2>Recent Posts</h2>
   <ul>
   {sortedPosts.map((post) => (
     <li>
-      
       <a href={post.url}>{post.frontmatter.title}</a>
     </li>
   ))}

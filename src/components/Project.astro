@@ -1,12 +1,11 @@
 ---
 // Project.astro
-const {title, license, description, tags} = Astro.props;
+const {title, description, tags} = Astro.props;
 ---
 
 <article class="project-card">
   <h3 class="split">
     <span>{title}</span>
-    <span class="license">{license}</span>
   </h3>
   <p>{description}</p>
   <div class="tag-container">
@@ -40,14 +39,6 @@ const {title, license, description, tags} = Astro.props;
     vertical-align: middle;
     width: 100%;
 }
-
-  .license {
-    font-size: 14px;
-    padding: 4px 8px;
-    border: 1px solid;
-    border-radius: 2px;
-    color: green; border-color: green; background: rgba(209, 154, 102, 0.05);
-  }
 
   .tag.ansible  { color: #d19a66; border-color: rgba(209, 154, 102, 0.3); background: rgba(209, 154, 102, 0.05); }
   .tag.rust     { color: #e06c75; border-color: rgba(224, 108, 117, 0.3); background: rgba(224, 108, 117, 0.05); }
